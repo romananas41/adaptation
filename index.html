@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хаб програмування</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <header>
+        <h1>Хаб програмування</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Вступ</a></li>
+                <li><a href="#languages">Мови програмування</a></li>
+                <li><a href="#tools">Інструменти розробки</a></li>
+                <li><a href="#resources">Додаткові ресурси</a></li>
+                <li><a href="#about">Про нас</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </header>
+    <aside>
+        <h2>Про нас</h2>
+        <address>
+            <p>Ласкаво просимо до Хабу програмування! Ми присвячені наданню корисної інформації про мови програмування, інструменти та ресурси, щоб допомогти вам стати кращим програмістом.</p>
+        </address>
+    </aside>
+    <main>
+        <section id="introduction">
+            <article>
+                <h2>Вступ до програмування</h2>
+                <p><q>Програмування - це процес створення інструкцій, які кажуть комп'ютеру, що робити.</q> Це включає написання коду з використанням конкретних мов програмування. Незалежно від того, чи ви початківець, чи досвідчений розробник, розуміння основ програмування є важливим.</p>
+            </article>
+        </section>
+        <section id="languages">
+            <article>
+                <h2>Мови програмування</h2>
+                <p>Існує безліч мов програмування, кожна зі своєю синтаксичною структурою та призначенням. Деякі популярні мови програмування:</p>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>C#</li>
+                </ul>
+                <p>Вивчення декількох мов програмування може розширити ваш набір навичок та зробити вас більш універсальним розробником.</p>
+            </article>
+        </section>
+        <section id="tools">
+            <article>
+                <h2>Інструменти розробки</h2>
+                <p>Інструменти розробки є необхідними для написання, налагодження та підтримки коду ефективно. Деякі поширені інструменти розробки включають:</p>
+                <ul>
+                    <li>Інтегровані середовища розробки (<abbr title="Integrated Development Environment">IDE</abbr>)</li>
+                    <li>Текстові редактори (наприклад, <cite>Sublime Text</cite>, <cite>Visual Studio Code</cite>)</li>
+                    <li>Системи контролю версій (наприклад, <abbr title="Git">Git</abbr>)</li>
+                    <li>Інструменти відлагодження</li>
+                    <li>Інструменти автоматизації збірки (наприклад, <cite>Maven</cite>, <cite>Gradle</cite>)</li>
+                </ul>
+                <p>Вибір правильних інструментів може значно підвищити вашу продуктивність як програміста.</p>
+            </article>
+        </section>
+        <section id="resources">
+            <article>
+                <h2>Додаткові ресурси</h2>
+                <p>Існує багато онлайн-ресурсів для вивчення та вдосконалення навичок програмування. Деякі рекомендовані ресурси включають:</p>
+                <ul>
+                    <li>Онлайн-уроки та курси (наприклад, <cite>Codecademy</cite>, <cite>Coursera</cite>, <cite>Udemy</cite>)</li>
+                    <li>Спільноти та форуми програмістів (наприклад, <cite>Stack Overflow</cite>, <cite>GitHub</cite>)</li>
+                    <li>Документація та офіційні веб-сайти мов програмування</li>
+                    <li>Книги та електронні книги з програмування</li>
+                </ul>
+                <p>Дослідження цих ресурсів може допомогти вам залишатися оновленим із останніми тенденціями та техніками у світі програмування.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>
+            <p>Зв'яжіться з нами:</p>
+            <p>Email: <a href="mailto:info@programminghub.com">info@programminghub.com</a></p>
+            <p>Телефон: <a href="tel:+1234567890">+1234567890</a></p>
+        </address>
+        <div id="social-media">
+            <a href="https://www.google.com/maps" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Google_Maps_icon_%282015-2020%29.svg/1200px-Google_Maps_icon_%282015-2020%29.svg.png" alt="Google Maps">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9M_tD37JqvVrWXpo7eDQ2ycsDoV3mGnnvPeB-Gk4Pg&s" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-facebook--icon-png-image_3570308.jpg" alt="Facebook">
+            </a>
+        </div>
+        <p>© 2024 Хаб програмування. Усі права захищені.</p>
+    </footer>    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('visible');
+        });
+    </script>
+</body>
+</html>
